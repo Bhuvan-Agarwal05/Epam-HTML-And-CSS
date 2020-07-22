@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Sign Up Page</title>
+	 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/signup.css">
+   
+</head>
+
+<body>
+	<br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 offset-0.3">
+				<div class="row">
+					<div class="col-md-5 register-left">
+						<i class="fas fa-hand-point-down fa-9x" id="pointer"></i>
+						<h3>Join Us</h3>
+						<strong><p>Subscribe For Latest Updates</p></strong>
+						<div class="logo">
+						<a href="#" title="Join us onFacebook"><i class="fab fa-facebook-f fa-3x"></i></a>
+      			<a href="#" title="Visit Our YouTube Channel"><i class="fab fa-youtube fa-3x"></i></a>
+     					<a href="#" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in fa-3x"></i></a>
+      					<a href="#" title="Follow us on Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+  				
+  						</div>
+							<a href="#"><button type="button" class="btn btn-primary">About Us</button></a>
+						</div>
+					<div class="col-md-6 register-right">
+						<h1>Register Here</h1>
+					<form>
+						<div class="register-form">
+							<div class="form-group">
+								<input required type="text" class="form-control" placeholder="Name" maxlength="25" style="text-transform: uppercase;">
+							</div>
+							<div class="form-group">
+								<input required type="text" class="form-control"  placeholder="USERNAME" maxlength="25">
+							</div>
+							<div class="form-group">
+								<input required type="email" class="form-control" placeholder="E-MAIL" maxlength="40">
+							</div>
+							<div class="form-group">
+								<input required type="password" id="pass" class="form-control " name="password" placeholder="PASSWORD (Max. 20 Characters)" maxlength="20">
+							</div>
+							 <input type="checkbox" onclick="myFunction()"><span style="font-weight:bold; font-size:14px;">Show Password</span>
+
+							<script> function myFunction() {
+  									var x = document.getElementById("pass");
+  									if (x.type === "password") {
+   									 x.type = "text";
+  									} else {
+    									x.type = "password";
+  									}
+								}
+							</script>
+							<input type="submit" class="btn btn-primary" value="Register">
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
